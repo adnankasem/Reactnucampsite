@@ -21,8 +21,6 @@ const mapStateToProps = state => {
 
 class Main extends Component {
 
-    
-
 
     render() {
 
@@ -67,4 +65,4 @@ class Main extends Component {
     };
 }
 
-export default withRouter(connect(mapSateToProps)(Main));
+export default withRouter(connect(mapStateToProps)(Main));
