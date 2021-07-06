@@ -34,11 +34,11 @@ class Contact extends Component {
         };
 
         
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleLogin = this.handleLogin.bind(this)
     }
 
     
-    handleSubmit(values) {
+    handleLogin(values) {
         console.log("Current state is: " + JSON.stringify(values));
         alert("Current state is: " + JSON.stringify(values));
     }
@@ -79,7 +79,7 @@ class Contact extends Component {
                         <hr />
                     </div>
                     <div className="col-md-10">
-                        <LocalForm onSubmit={values => this.handleSubmit(values)}>
+                        <LocalForm onSubmit={values => this.handleLogin(values)}>
                             <Row className="form-group">
                                 <Label htmlFor="firstName" md={2}>First Name</Label>
                                 <Col md={10}>
